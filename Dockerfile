@@ -1,5 +1,5 @@
 FROM ubuntu:12.04
-MAINTAINER JY
+MAINTAINER Weiqian Li
 
 VOLUME ["/var/www"]
 
@@ -13,7 +13,6 @@ RUN apt-get update && \
       php5-ldap \
       php5-mysql \
       php5-curl \
-      cron \
       vim
 
 COPY apache_default /etc/apache2/sites-available/default
